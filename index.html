@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>welcome to our web site</p>
+
+    <button id="submit">click me</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#submit").click(function () {
+          $("p").hide();
+        });
+        $("#submit").dblclick(function () {
+          $("p").show();
+        });
+        $("#submit").click(function () {
+          $("p").toggle();
+        });
+
+        $("#submit").mouseup(function () {
+          alert("mouse up");
+        });
+        $("#submit").mousedown(function () {
+          alert("mouse down");
+        });
+        $("#submit").mouseout(function () {
+          alert("mouse out");
+        });
+        $("#submit").mouseenter(function () {
+          alert("mouse center");
+        });
+        $("#submit").mousemove(function () {
+          alert("mouse move");
+        });
+        $("#submit").mouseover(function () {
+          alert("mouse over");
+        });
+        $("#submit").mouseleave(function () {
+          alert("mouse leave");
+        });
+      });
+    </script>
+  </body>
+</html>
